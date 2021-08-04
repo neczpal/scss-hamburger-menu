@@ -12,7 +12,9 @@
   "author": "Neczpal Abel",
   "scripts": {
     "build": "sass src/scss/style.scss dist/css/main.css",
-    "watch": "sass --watch src/scss/style.scss dist/css/main.css"
+    "watch": "sass --watch src/scss/style.scss dist/css/main.css",
+    "build-bem": "sass src/scss/style-bem.scss dist/css/main.css",
+    "watch-bem": "sass --watch src/scss/style-bem.scss dist/css/main.css"
   },
   "devDependencies": {}
 }
