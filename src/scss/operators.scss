@@ -55,6 +55,15 @@
 @debug '11px % 2';
 @debug 11px % 2;
 
+@debug ----------- BOOLEAN -----------;
+
+@debug 'not false';
+@debug not false;
+@debug 'true or false';
+@debug true or false;
+@debug 'true and true';
+@debug true and true;
+
 @debug ----------- STRING -----------;
 
 $postfix: "--10";
@@ -66,12 +75,3 @@ $postfix: "--10";
     content: #{"track" + "list"};
   }
 }
-
-@debug ----------- BOOLEAN -----------;
-
-@debug 'not false';
-@debug not false;
-@debug 'true or false';
-@debug true or false;
-@debug 'true and true';
-@debug true and true;
