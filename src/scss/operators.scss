@@ -1,0 +1,77 @@
+@use "sass:math";
+
+@debug ----------- EQUALITY -----------;
+
+@debug '1px == 1';
+@debug 1px == 1;
+@debug '1px == 1px';
+@debug 1px == 1px;
+
+@debug '10px == 1cm';
+@debug 10px == 1cm;
+@debug '48px == 0.5in';
+@debug 48px == 0.5in;
+@debug '0.9999999999999999 == 1';
+@debug 0.9999999999999999 == 1;
+
+@debug "Arial == 'Arial'";
+@debug Arial == 'Arial';
+@debug 'Arial == "Arial"';
+@debug Arial == "Arial";
+@debug "'Arial' == \"Arial\"";
+@debug 'Arial' == "Arial";
+
+@debug 'true == true';
+@debug true == true;
+@debug 'false != true';
+@debug false != true;
+
+@debug ----------- RELATIONS -----------;
+
+@debug '100 > 50';
+@debug 100 > 50;
+@debug '10px < 17px';
+@debug 10px < 17px;
+@debug '97px >= 1in';
+@debug 97px >= 1in;
+@debug '1000ms <= 1s';
+@debug 1000ms <= 1s;
+
+@debug ----------- MATH -----------;
+
+@debug '10s + 5s';
+@debug 10s + 5s;
+@debug '10s - 50ms';
+@debug 10s - 50ms;
+@debug '10px * 2';
+@debug 10px * 2;
+@debug '10px * 2px';
+@debug 10px * 2px;
+@debug '10px / 2px';
+@debug 10px / 2px;
+// / operator on numbers deprecated
+@debug 'math.div(10px / 2)';
+@debug math.div(10px, 2);
+@debug '11px % 2';
+@debug 11px % 2;
+
+@debug ----------- STRING -----------;
+
+$postfix: "--10";
+.container#{$postfix}::before {
+  font: 16px/16px "Times " + "New Roman", Times, serif;
+  content: track - list;
+
+  .interpolation {
+    content: #{"track" + "list"};
+  }
+}
+
+@debug ----------- BOOLEAN -----------;
+
+@debug 'not false';
+@debug not false;
+@debug 'true or false';
+@debug true or false;
+@debug 'true and true';
+@debug true and true;
