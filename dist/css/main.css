@@ -9,14 +9,12 @@ nav {
   display: flex;
   justify-content: center;
 }
-
 nav div {
   display: flex;
   align-items: flex-start;
   flex-direction: row-reverse;
   width: 100%;
 }
-
 @media screen and (min-width: 40em) {
   nav div {
     align-items: center;
@@ -30,7 +28,6 @@ nav div ul {
   width: 100%;
   list-style: none;
 }
-
 @media screen and (min-width: 40em) {
   nav div ul {
     display: flex;
@@ -41,7 +38,6 @@ nav div ul {
 nav div ul li {
   text-align: center;
 }
-
 nav div ul li a {
   text-align: center;
   color: #222;
@@ -51,19 +47,15 @@ nav div ul li a {
   padding: 1rem;
   text-decoration: none;
 }
-
 nav div ul li a:hover {
   background-color: #aaaaaa;
 }
-
 nav div input[type=checkbox] {
   display: none;
 }
-
 nav div input[type=checkbox]:checked + ul {
   display: flex;
 }
-
 nav div label {
   display: flex;
   flex-wrap: wrap;
@@ -73,7 +65,6 @@ nav div label {
   width: 1.5rem;
   padding: 0.75rem;
 }
-
 @media screen and (min-width: 40rem) {
   nav div label {
     display: none;
