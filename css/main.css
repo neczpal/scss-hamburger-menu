@@ -4,8 +4,8 @@ body {
 }
 
 .nav {
-  background-color: #fff;
-  box-shadow: 0 0 18px #aaa;
+  background-color: #EFEFEF;
+  box-shadow: 0 0 18px #aab;
   display: flex;
   justify-content: center;
 }
@@ -48,7 +48,8 @@ body {
   text-decoration: none;
 }
 .nav__link:hover {
-  background-color: #aaaaaa;
+  color: #EEE;
+  background-color: #262626;
 }
 .nav__hamburger-checkbox {
   display: none;
