@@ -1,5 +1,5 @@
-@import "colors";
-@import "normalize";
+@use "modules/colors" as *;
+@use "modules/normalize";
 
 .nav {
   background-color: $nav-background-color;
