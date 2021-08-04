@@ -1,13 +1,5 @@
-$nav-background-color: #EFEFEF;
-$nav-shadow-color: #aab;
-$link-color: #222;
-$link-hover-color: #EEE;
-$link-hover-background-color: #262626;
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
+@import "colors";
+@import "normalize";
 
 .nav {
   background-color: $nav-background-color;
