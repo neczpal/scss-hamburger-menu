@@ -1,9 +1,8 @@
-@use "modules/colors" as *;
-@use "modules/normalize";
+@use "modules/modules";
 
 .nav {
-  background-color: $nav-background-color;
-  box-shadow: 0 0 18px $nav-shadow-color;
+  background-color: modules.$nav-background-color;
+  box-shadow: 0 0 18px modules.$nav-shadow-color;
   display: flex;
   justify-content: center;
 
@@ -39,7 +38,7 @@
 
   &__link {
     text-align: center;
-    color: $link-color;
+    color: modules.$link-color;
     display: block;
     font-size: 1rem;
     line-height: 1rem;
@@ -47,8 +46,8 @@
     text-decoration: none;
 
     &:hover {
-      color: $link-hover-color;
-      background-color: $link-hover-background-color;
+      color: modules.$link-hover-color;
+      background-color: modules.$link-hover-background-color;
     }
   }
 
@@ -76,7 +75,7 @@
     }
 
     &-line {
-      background: $link-color;
+      background: modules.$link-color;
       display: block;
       height: 2px;
       width: 1.5rem;
